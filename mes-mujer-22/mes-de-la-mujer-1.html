@@ -1,0 +1,526 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <title>lANDING iNFOBAE</title>
+    <style>
+        
+/**
+ * Generic Styling
+*/
+
+body{
+    margin: 0;
+}
+#landing-infobae {
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 112%;
+  }
+
+
+#header-infobae{
+    width: 100%;
+}
+
+#header-infobae img{
+    width: 100%;
+}
+
+#landing-infobae img{
+    width: 100%;
+}
+
+
+#texto-infobae{
+    padding: 100px 20%;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#landing-infobae h2{
+    font-size: 60px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.contenedor h3{
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0;
+}
+
+
+
+
+
+
+/**
+ * Tabs
+ */
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; /*make sure it wraps*/
+	justify-content: center;
+	
+}
+.tabs label {
+	order: 1; /*Put the labels first*/
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 20%;
+	padding: 10px;
+	margin-right: 0;
+	cursor: pointer;
+    color: black;
+    border-bottom: solid 1px black;
+   font-weight: 300;
+   font-size: 18px;
+   transition: background ease 0.5s;
+   transition-duration: 0.4s;
+   text-align: center;
+}
+
+.tabs label:hover{
+    transition: background ease 0.5s;
+    transition-duration: 0.4s;
+    font-weight: 500;
+    border-bottom: solid 2px black;
+}
+
+.tabs .tab {
+  order: 99; /*Put the tabs last*/
+  flex-grow: 1;
+	width: 100%;
+    display: none;
+    color: black;
+    padding: 5% 0%;
+}
+
+
+
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	border-bottom: solid 3px black;
+    font-weight: 700;
+    color: black;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+
+
+
+
+.tabs input[type="radio"]:checked + label + .prod-regalo1{
+    display: flex;
+    
+}
+
+/*CONTENEDOR */
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.contenedor p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contenedor h4{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: gray;
+    margin: 5px 0;
+}
+
+.contenedor h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.col-izq, .col-der{
+    width: 48%;
+}
+
+#cap1 , #cap2 , #cap3 , #cap4{
+    text-align: center;
+    padding: 80px 5%;
+}
+
+.direccion-1{
+    flex-direction: row;
+}
+
+.direccion-2{
+    flex-direction: row-reverse;
+}
+
+
+/**BOTON**/
+button { 
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    position: relative;
+    display:block;
+    height: 45px;
+    width: 110px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: black;
+    border-bottom: 2px black solid;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+
+.svg{
+    transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+
+  }
+  
+  .svg:before{
+    position:absolute;  
+    content:"";
+    background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0;
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  }
+  
+  .svg:after {
+    content: "";
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -2;
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+  }
+  .svg:hover{
+    color:white;
+    border-bottom: 0px black solid;
+  }
+  .svg:hover:before {
+    opacity: .8;
+  }
+  .svg:hover:after {
+    top: 0;
+  }
+
+/*MOBILE*/
+@media (max-width: 701px){
+    #landing-infobae h2{
+    font-size: 45px;
+}
+
+#landing-infobae h3{
+    font-size: 25px;
+        font-weight: 500;
+}
+
+    #header-desktop{
+        display: none;
+    }
+
+    
+    #texto-navidad {
+        padding: 50px 5%;
+    }
+
+    .tabs label {
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .tabs .tab {
+        padding: 5% 0%;
+    }
+
+    .tabs input[type="radio"]:checked + label {
+       
+        font-weight: 700;
+        color: white;
+        background: black;
+    }
+
+    #texto-infobae {
+        padding: 60px 5%;
+    }
+
+    .direccion-1 , .direccion-2{
+        flex-direction: column;
+    }
+
+    .col-izq , .col-der{
+        width: 100%;
+    }
+
+    .contenedor h4 {
+        font-size: 16px;}
+
+        .contenedor p{
+            font-size: 20px;
+            
+        }
+    
+        button { 
+            font-size: 20px;
+            width: 120px;
+        }
+
+        .col-der{
+            margin-top: 40px;
+        }
+
+        #cap1, #cap2, #cap3, #cap4 {
+         
+            padding: 50px 5%;
+        }
+
+    
+    
+
+
+}
+
+
+
+/*TABLET*/
+@media (min-width: 701px) and (max-width: 1024px){
+    #header-mobile{
+        display: none;
+    }
+
+    #texto-navidad {
+        padding: 100px 10%;
+    }
+
+    .prod-card {
+        width: 30%;
+    }
+
+    .tabs label {
+        width: 20%;
+        font-size: 18px;
+    }
+
+    .tabs .tab {
+        padding: 5% 1%;
+    }
+
+    #texto-infobae {
+        padding: 80px 5%;}
+
+        .direccion-1 , .direccion-2{
+            flex-direction: column;
+        }
+    
+        .col-izq , .col-der{
+            width: 100%;
+        }
+    
+        .contenedor h4 {
+            font-size: 16px;}
+    
+            .contenedor p{
+                font-size: 20px;
+                
+            }
+        
+            button { 
+                font-size: 20px;
+                width: 120px;
+            }
+    
+            .col-der{
+                margin-top: 40px;
+            }
+    
+            #cap1, #cap2, #cap3, #cap4 {
+             
+                padding: 50px 5%;
+            }
+
+
+    
+}
+
+
+@media (min-width: 1025px) and (max-width: 1515px){
+    
+    
+    .tabs .tab {
+        padding: 5% 5%;
+    }
+    
+}
+
+@media (min-width: 1025px){
+    #header-mobile{
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="landing-infobae">
+        <section id="header-infobae">
+            <img id="header-desktop" src="imgs/destacado-desktop.jpg" alt="">
+            <img id="header-mobile"src="imgs/destacado-mobile.jpg" alt="">
+        </section>
+
+        <section id="texto-infobae">
+            <p>Los elegidos en el mes de la mujer. Creados e impulsados por mujeres emblemáticas que contribuyeron al rubro beauty.  
+            </p>
+           
+        </section>
+
+        <section class="tabs">
+            <input type="radio" name="tabs" id="tabone" checked="checked">
+            <label for="tabone" >ESTEE LAUDER</label>
+            <div class="tab" id="cap1">
+                <section class="contenedor direccion-1">
+                    <div class="col-izq">
+                        <img src="https://www.perfumeriasrouge.com/media/wysiwyg/landing/mes-mujer/banner-mm-2.jpg" alt="">
+                    </div>
+                    <div class="col-der">
+                        <h4>Advanced Night Repair </h4>
+                        <h3>ESTEE LAUDER</h3>
+                        <p><i><strong>“La belleza es una actitud, no hay secretos”, dijo Estée Lauder,</strong></i> icónica emprendedora norteamericana y una de las primeras empresarias del mundo. En 1946 creó su compañía de productos para el cuidado de la piel con una sencilla premisa: cualquier mujer puede ser hermosa. Ella creía que cada mujer tenía una belleza propia que provenía de su interior y de su fortaleza.
+                        </p>
+                        <p>Su interés por la belleza nació en su adolescencia cuando su tío húngaro vino a vivir con su familia. Él creaba suaves cremas hidratantes en su casa lo que le permitió a Estée, no sólo aprender a prepararlas, sino también cómo aplicarlas en los rostros de las mujeres.<strong> Así, comenzó a venderlas en salones de belleza, demostrando sus productos a las clientas mientras estaban bajo los icónicos secadores de cabello.</strong> </p>
+                        <p>Estée Lauder tenía instintos innatos sobre lo que querían las mujeres y esto la llevó a ser una visionaria de los negocios y recibir numerosos premios. <strong>Ella creía que para hacer una venta había que tocar a la consumidora y mostrarle los resultados en su propio rostro,</strong> lo que fue el inicio del servicio personal high-touch (de alto toque, en inglés) de la empresa. También llevó la idea del "regalo con la compra" a niveles comerciales, al punto de que se convirtió en una práctica estándar en la industria.</p>
+                        <button class="svg" onclick="window.location.href='https://www.perfumeriasrouge.com/estee-lauder-advanced-night-repair-synchronized-multi-recovery-complex.html';">COMPRAR</button>
+                    </div>
+                </section>
+
+
+
+            </div>
+
+
+            
+            <input type="radio" name="tabs" id="tabtwo">
+            <label for="tabtwo" >CAROLINA HERRERA</label>
+            <div class="tab" id="cap2">
+                <section class="contenedor direccion-2">
+                    <div class="col-izq">
+                        <img src="https://www.perfumeriasrouge.com/media/wysiwyg/landing/mes-mujer/banner-mm-3.jpg" alt="">
+                    </div>
+                    <div class="col-der">
+                        <h4>Very Good Girl EDP </h4>
+                        <h3>CAROLINA HERRERA</h3>
+                        <p>Un poco más acá en el tiempo, Carolina Adriana Herrera es otro ícono que, a fuerza de autoconfianza y atrevimiento, se constituye en una inspiración para hombres y mujeres. “Es un trabajo constante. No llegas a ser la mujer empoderada perfecta. <i><strong>El empoderamiento es el día a día. La aceptación es el día a día. La alegría de vivir es todo el día”, manifestó recientemente.</strong></i>
+                        </p>
+                        <p>
+                            <strong>Carolina A. comenzó en el negocio de la perfumería en 1997 junto a su madre, la consagrada diseñadora internacional de moda Carolina Herrera,</strong> quien dejó su Venezuela natal para cumplir su sueño de fundar una firma de moda en Nueva York. Hoy es directora creativa de fragancias de la marca.</p>
+                        <p><i><strong>Inspirada en las mujeres de su familia y de su vida, reconoce a las que trabajan para mejorar la calidad de vida de otras.</strong></i> En tal sentido, apoya a la modelo Karlie Kloss en su asociación sin fines de lucro que ofrece cursos de programación a chicas de entre 13 y 18 años. Asimismo, colabora con la asociación Dress for Success que  <i><strong>ayuda a mujeres en sus primeras entrevistas profesionales.</strong></i> Y durante la pandemia, su compañía creó la iniciativa Heart for Hope, mediante la cual <i><strong>apoya a la Cruz Roja donando el 10 por ciento de las ganancias de los accesorios de CH Carolina Herrera. </strong></i>
+                        </p>
+                        <p><strong>Para Carolina A. el empoderamiento femenino está vinculado con la seguridad y con el bienestar:</strong> para unas puede ser a través de una palabra de apoyo, para otra de un stiletto, para otra de un pantalón o para otra de un labio rojo. Por esto, <strong>las creaciones de moda y de fragancias de la marca transmiten alegría de vivir, buscando hacer sentir bien a las mujeres y a sentirse femeninas</strong> independientemente de lo que elija ponerse, a aceptarse como son, a encontrar esa seguridad interior que les permita descubrir y expresar su potencial. 
+                        </p>
+                        <button class="svg" onclick="window.location.href='https://www.perfumeriasrouge.com/carolinaherreraverygoodgirledp.html';">COMPRAR</button>
+                    
+                    </div>
+                </section>
+            
+            </div>
+
+
+
+            <input type="radio" name="tabs" id="tabthree">
+            <label for="tabthree" >LANCOME</label>
+            <div class="tab" id="cap3">
+                <section class="contenedor direccion-1">
+                    <div class="col-izq">
+                        <img src="https://www.perfumeriasrouge.com/media/wysiwyg/landing/mes-mujer/banner-mm-4.jpg" alt="">
+                    </div>
+                    <div class="col-der">
+                        <h4>Lancôme Idôle EDP</h4>
+                        <h3>LANCOME</h3>
+                        <p><strong>Entre los millennials también se encuentran mujeres que ponen su talento y su prestigio al servicio de la promoción de la mujer.</strong> Una de ellas es la actriz Zendaya, quien descolló de chica en las series de Disney para consagrarse muy joven en series y películas vistas por millones de personas. Pero no se deja llevar por la maquinaria hollywoodiense y desde hace mucho manifiesta su intención de <strong>alejarse del cliché juvenil para dedicarse a causas justas, al activismo feminista y contra la discriminación racial.</strong>
+                        </p>
+                        <p>
+                            Como ícono de la moda y estrella de pop, es embajadora de la marca Idôle de Lancôme, un perfume que <strong>simboliza a una mujer fuerte, optimista y pionera que sueña a lo grande.</strong> Zendaya es un modelo a seguir para su generación y usa su voz para promover la educación y la positividad. Al mismo tiempo, su participación en causas benéficas está estrechamente vinculadas con el compromiso filantrópico de Lancôme. "Es un gran honor poder representar a una marca como Lancôme y unirme a una formación tan increíble de mujeres icónicas", sostuvo la estrella en el lanzamiento de la fragancia.
+
+                        </p>
+                        <p>Su lucha contra el Photoshop y el falseamiento del cuerpo femenino la llevó, en 2019, a postear la foto sin retoques cuando descubrió que un medio había estilizado su cadera y su torso en una imagen promocional. “Estas son las cosas que crean en nosotras, las mujeres, una autoconsciencia falsa, ideas sobre la belleza que no deberían existir. Creo en el verdadero amor, así que aquí está la imagen real de mí”, posteó Zendaya en su Instagram para llamar la atención sobre esa maquinaria visual que sexualiza el cuerpo femenino y promueve una estetización absurda que roza lo irrea.
+                            La propuesta de Perfumería Rouge es honrar a todas estas mujeres por recordar cada día que la belleza comienza cuando cada una decide ser ella misma.
+                            </p>
+                        <button class="svg" onclick="window.location.href='https://www.perfumeriasrouge.com/lancome-idole-edp.html';">COMPRAR</button>
+                    
+                    </div>
+                </section>
+
+            </div>
+
+            <input type="radio" name="tabs" id="tabfour">
+            <label for="tabfour" >TOM FORD</label>
+            <div class="tab" id="cap4">
+                <section class="contenedor direccion-2">
+                    <div class="col-izq">
+                        <img src="https://www.perfumeriasrouge.com/media/wysiwyg/landing/mes-mujer/banner-mm-5.jpg" alt="">
+                    </div>
+                    <div class="col-der">
+                        <h4>Black Orchid EDP</h4>
+                        <h3>TOM FORD</h3>
+                        <p>La colección Signature es atemporal, elegante y atractiva con un impacto duradero e icónico. Inspirada en el pasado glamoroso de los perfumistas. <strong> Icónica. Elusiva. Seductora.</strong>
+                        </p>
+                        <p>La atracción de Tom Ford por lo inalcanzable y su fascinación con la búsqueda de la orquídea negra, condujo a la creación de su primera fragancia para mujer. "para mí, es la flor perfecta... Lujosa, elegante, pura y sofisticada." Una fragancia lujosa y sensual de notas ricas y oscuras y una atractiva poción de orquídeas negras y especias, Tom Ford Black Orchid tan moderna como eterna.
+                        </p>
+                        <p><strong> Notas altas:</strong> Trufa Negra, Bergamota.</p>
+                        <p><strong> Notas medias:</strong> Orquídea negra, Ciruela negra.</p>
+                        <p><strong> Notas base:</strong> Noir gourmand accord*, Pachulí.</p>
+                        <p>*el “acorde gourmand negro" es una mezcla de vainilla, coco, jengibre piña, pasa negra y notas de leche con canela.
+                        </p>
+                        <button class="svg" onclick="window.location.href='https://www.perfumeriasrouge.com/tom-ford-black-orchid-edp.html';">COMPRAR</button>
+                    
+
+                    </div>
+                </section>
+            </div>
+       
+        </section>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+/**
+ * Generic Styling
+*/
+
+body{
+    margin: 0;
+}
+#landing-infobae {
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 112%;
+  }
+
+
+#header-infobae{
+    width: 100%;
+}
+
+#header-infobae img{
+    width: 100%;
+}
+
+#landing-infobae img{
+    width: 100%;
+}
+
+
+#texto-infobae{
+    padding: 100px 20%;
+    color: black;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#landing-infobae h2{
+    font-size: 60px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.contenedor h3{
+    font-size: 25px;
+    font-weight: 100;
+    margin: 0;
+}
+
+
+
+
+
+
+/**
+ * Tabs
+ */
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; /*make sure it wraps*/
+	justify-content: center;
+	
+}
+.tabs label {
+	order: 1; /*Put the labels first*/
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	width: 20%;
+	padding: 10px;
+	margin-right: 0;
+	cursor: pointer;
+    color: black;
+    border-bottom: solid 1px black;
+   font-weight: 300;
+   font-size: 18px;
+   transition: background ease 0.5s;
+   transition-duration: 0.4s;
+   text-align: center;
+}
+
+.tabs label:hover{
+    transition: background ease 0.5s;
+    transition-duration: 0.4s;
+    font-weight: 500;
+    border-bottom: solid 2px black;
+}
+
+.tabs .tab {
+  order: 99; /*Put the tabs last*/
+  flex-grow: 1;
+	width: 100%;
+    display: none;
+    color: black;
+    padding: 5% 0%;
+}
+
+
+
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	border-bottom: solid 3px black;
+    font-weight: 700;
+    color: black;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+
+
+
+
+.tabs input[type="radio"]:checked + label + .prod-regalo1{
+    display: flex;
+    
+}
+
+/*CONTENEDOR */
+
+.contenedor{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.contenedor p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.contenedor h4{
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: gray;
+    margin: 5px 0;
+}
+
+.contenedor h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.col-izq, .col-der{
+    width: 48%;
+}
+
+#cap1 , #cap2 , #cap3 , #cap4{
+    text-align: center;
+    padding: 80px 5%;
+}
+
+.direccion-1{
+    flex-direction: row;
+}
+
+.direccion-2{
+    flex-direction: row-reverse;
+}
+
+
+/**BOTON**/
+button { 
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    position: relative;
+    display:block;
+    height: 45px;
+    width: 110px;
+    margin-top: 25px;
+    padding: 5px 5px;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: black;
+    border-bottom: 2px black solid;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+
+.svg{
+    transition: all 150ms cubic-bezier(0.445, 0.050, 0.550, 0.950); 
+
+  }
+  
+  .svg:before{
+    position:absolute;  
+    content:"";
+    background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg) no-repeat center center;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0;
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000);
+  }
+  
+  .svg:after {
+    content: "";
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -2;
+    transition: all 250ms cubic-bezier(0.230, 1.000, 0.320, 1.000); 
+  }
+  .svg:hover{
+    color:white;
+    border-bottom: 0px black solid;
+  }
+  .svg:hover:before {
+    opacity: .8;
+  }
+  .svg:hover:after {
+    top: 0;
+  }
+
+/*MOBILE*/
+@media (max-width: 701px){
+    #landing-infobae h2{
+    font-size: 45px;
+}
+
+#landing-infobae h3{
+    font-size: 25px;
+        font-weight: 500;
+}
+
+    #header-desktop{
+        display: none;
+    }
+
+    
+    #texto-navidad {
+        padding: 50px 5%;
+    }
+
+    .tabs label {
+        width: 40%;
+        font-size: 18px;
+    }
+
+    .tabs .tab {
+        padding: 5% 0%;
+    }
+
+    .tabs input[type="radio"]:checked + label {
+       
+        font-weight: 700;
+        color: white;
+        background: black;
+    }
+
+    #texto-infobae {
+        padding: 60px 5%;
+    }
+
+    .direccion-1 , .direccion-2{
+        flex-direction: column;
+    }
+
+    .col-izq , .col-der{
+        width: 100%;
+    }
+
+    .contenedor h4 {
+        font-size: 16px;}
+
+        .contenedor p{
+            font-size: 20px;
+            
+        }
+    
+        button { 
+            font-size: 20px;
+            width: 120px;
+        }
+
+        .col-der{
+            margin-top: 40px;
+        }
+
+        #cap1, #cap2, #cap3, #cap4 {
+         
+            padding: 50px 5%;
+        }
+
+    
+    
+
+
+}
+
+
+
+/*TABLET*/
+@media (min-width: 701px) and (max-width: 1024px){
+    #header-mobile{
+        display: none;
+    }
+
+    #texto-navidad {
+        padding: 100px 10%;
+    }
+
+    .prod-card {
+        width: 30%;
+    }
+
+    .tabs label {
+        width: 20%;
+        font-size: 18px;
+    }
+
+    .tabs .tab {
+        padding: 5% 1%;
+    }
+
+    #texto-infobae {
+        padding: 80px 5%;}
+
+        .direccion-1 , .direccion-2{
+            flex-direction: column;
+        }
+    
+        .col-izq , .col-der{
+            width: 100%;
+        }
+    
+        .contenedor h4 {
+            font-size: 16px;}
+    
+            .contenedor p{
+                font-size: 20px;
+                
+            }
+        
+            button { 
+                font-size: 20px;
+                width: 120px;
+            }
+    
+            .col-der{
+                margin-top: 40px;
+            }
+    
+            #cap1, #cap2, #cap3, #cap4 {
+             
+                padding: 50px 5%;
+            }
+
+
+    
+}
+
+
+@media (min-width: 1025px) and (max-width: 1515px){
+    
+    
+    .tabs .tab {
+        padding: 5% 5%;
+    }
+    
+}
+
+@media (min-width: 1025px){
+    #header-mobile{
+        display: none;
+    }
+}

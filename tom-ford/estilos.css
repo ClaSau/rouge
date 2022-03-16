@@ -143,6 +143,10 @@ h3{
 
 
 @media (max-width: 701px){
+h3{
+    font-size: 26px;
+}
+
     .header-mobile{
         display: initial;
     }

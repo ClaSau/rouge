@@ -17,6 +17,7 @@ body{
   #landing img{
       width: 100% ;
   }
+  
 
 #header{
     width: 100%;
@@ -180,7 +181,7 @@ body{
 
     #header-mobile{
         display: initial;
-    }git
+    }
 
     .col-izq , .col-der , .col-izq-2 , .col-der-2 , .card{
         width: 100%!important;

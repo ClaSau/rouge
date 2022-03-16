@@ -112,7 +112,7 @@ h3{
 
 .contenedor-video{
     width: 90%;
-    margin: 80px auto 40px auto;
+    margin: 80px auto 0 auto;
 }
 
 #landing video{
@@ -165,7 +165,7 @@ h3{
 
     .contenedor-video {
         width: 100%;
-        margin: 40px auto 40px auto;
+        margin: 40px auto 0 auto;
     }
 
 
@@ -200,6 +200,6 @@ h3{
 
     .contenedor-video {
         width: 100%;
-        margin: 80px auto 40px auto;
+        margin: 80px auto 0 auto;
     }
 }

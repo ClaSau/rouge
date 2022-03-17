@@ -70,7 +70,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
 }
 
 .direccion-1{

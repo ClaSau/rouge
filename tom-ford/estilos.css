@@ -1,6 +1,8 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: white;
 }
 
 #landing {
@@ -48,8 +50,8 @@ body{
     width: 100%;
     font-size: 18px;
     text-align: center;
-        background-color: black;
-    color: white;
+        background-color: white;
+    color: black;
 }
 
 .texto-principal p{
@@ -59,7 +61,7 @@ body{
 
 .titulo-principal{
     width: 60%;
-    margin: 50px 0;
+    margin: 50px 0 90px 0;
     text-align: center;
 }
 
@@ -79,12 +81,12 @@ h3{
 }
 
 .dos-columnas{
-    width: 90%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .direccion-1{
@@ -98,21 +100,24 @@ h3{
 .linea{
     width: 100px;
     height: 2px;
-    background-color: black;
-    margin: 50px 0
+    background-color: white;
+    margin: 50px 0;
 }
 
-.col-izq , .col-der{
-    width: 40%;
+.col-izq{
+    width: 50%;
 }
 
 .col-der{
     align-items: flex-start;
+    width: 40%;
+    margin: 0 5%;
 }
 
 .contenedor-video{
     width: 90%;
-    margin: 80px auto 0 auto;
+    padding: 80px 5% 0 5%;
+    background-color: white;
 }
 
 #landing video{
@@ -189,7 +194,7 @@ h3{
     }
 
     .col-der{
-        margin-bottom: 50px;
+        margin: 20px 0 50px 0;
     }
 
     .linea{
@@ -197,7 +202,7 @@ h3{
     }
 
     .contenedor-video {
-        width: 100%;
+        width: 90%;
         margin: 40px auto 0 auto;
     }
 

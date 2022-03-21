@@ -1,81 +1,249 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos-dolce.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Landing Tom Ford</title>
-</head>
-<body>
-<div id="landing">
-        <section class="header">
-            <img class="logo" src="imgs/logo-blanco.png" alt="">
-            <img class="header-desktop" src="imgs/1-tom-ford-1a.jpg" alt="">
-            <img class="header-mobile" src="imgs/1-tom-ford-1b.jpg" alt="">
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
 
-        </section>
+#landing {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-        <section class="texto-principal">
-            <p>La colección Private Blend es la franquicia genderless como resultado de la colaboración de Tom Ford y maestros perfumistas para crear la más lujosa mezcla de esencias, diseñadas con el conocimiento mental de aromas e inspirado en sus viajes y experiencias.</p>
-        </section>
-        <section class="titulo-principal">
-            <h2>LAYERING</h2>
-            <p>El arte de perfumar en capas y crear una fragancia exclusiva y personal.</p>
-            <p> ¿Cómo se logra un layering?: Una pulverización del aroma más intenso en piel y dos aplicaciones en el lugar perfumado con la fragancia más fresca.</p>
-             
-        </section>
+  #landing img{
+      width: 100% ;
+  }
 
-        <section class="dos-columnas direccion-1">
-            <div class="col-izq">
-                <img src="imgs/1-tom-ford-7.jpg" alt="">
-            </div>
-            <div class="col-der">
-                <h3>OUD WOOD +</h3>
-                <h3>NEROLI PORTOFINO</h3>
-                <hr class="linea">
-                <p>Oud Wood y Neroli Portofino es el contraste entre el aroma amaderado de la resina de Oud y aroma fresco del Nerolí de Túnez.</p>
-                
-            </div>
-        </section>
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
 
-        <section class="dos-columnas direccion-2">
-            <div class="col-izq">
-                <img src="imgs/1-tom-ford-5.jpg" alt="">
-            </div>
-            <div class="col-der">
-                <h3>SOLEIL BLANC EDP + </h3>
-                <h3>NEROLI PORTOFINO</h3>
-                <hr class="linea">
-                <p>Soleil Blanc EDP y Neroli Portofino es una combinación sensual de un aroma solar y ambarado del coco de mer y el aroma fresco del Neroli.</p>
-                
-            </div>
-        </section>
+.header img{
+    width: 100%;
+}
 
-        <section class="dos-columnas direccion-1">
-            <div class="col-izq">
-                <img src="imgs/1-tom-ford-6.jpg" alt="">
-            </div>
-            <div class="col-der">
-                <h3>TOBACCO VANILLE + </h3>
-                <h3>OUD WOOD</h3>
-                <hr class="linea">
-                <p>Oud Wood y Tobacco Vanille es una combinación suntuosa de un aroma amaderado de la resina de Oud y ahumado de la hoja de tabaco.</p>
-                
-            </div>
-        </section>
+.header-desktop{
+    display: initial;
+}
 
-        <section class="contenedor-video">
-            <video controls autoplay muted loop>
-                <source src="imgs/video-tom-ford-neroli.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-        </section>
+.header-mobile{
+    display: none;
+}
 
-</div>
+.logo{
+    width: 30%!important;
+    margin: 20px auto;
+}
 
-</body>
-</html>
+.texto-principal{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+        background-color: black;
+    color: white;
+}
+
+.texto-principal p{
+    width: 70%;
+    margin: 80px auto;
+}
+
+.titulo-principal{
+    width: 60%;
+    margin: 50px 0 90px 0;
+    text-align: center;
+}
+
+.titulo-principal h2{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo-principal p{
+    margin: 0; 
+}
+
+h3{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 0;
+}
+
+.dos-columnas{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.direccion-1{
+    flex-direction: row;
+}
+
+.direccion-2{
+    flex-direction: row-reverse;
+}
+
+.linea{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin: 50px 0;
+}
+
+.linea2{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+}
+
+.col-izq{
+    width: 50%;
+}
+
+.col-der{
+    align-items: flex-start;
+    width: 40%;
+    margin: 0 5%;
+}
+
+.contenedor-video{
+    width: 90%;
+    padding: 80px 5% 80px 5%;
+    background-color: black;
+}
+
+#landing video{
+    width: 100%;
+}
+
+.boton-landing{
+    text-align: center;
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 50px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0px;
+    line-height: 20px;
+    transition-duration: 0.4s;
+    border: 1px black solid;
+
+}
+
+.boton-landing:hover{
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width: 701px){
+h3{
+    font-size: 26px;
+}
+
+    .header-mobile{
+        display: initial;
+    }
+    
+    .header-desktop{
+        display: none;
+    }
+
+    
+    .boton-landing{
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+    }
+
+    
+
+    .logo{
+        width: 70%!important;
+        margin: 30px auto;
+    }
+
+    .texto-principal p {
+        width: 90%;
+        margin: 60px auto;
+    }
+
+    .titulo-principal {
+        width: 90%;
+        margin: 20px 0 50px 0;
+        text-align: center;
+    }
+
+    .direccion-1 , .direccion-2 {
+        flex-direction: column;
+    }
+
+    .col-izq , .col-der{
+        width: 90%;
+    }
+
+    .col-der{
+        margin: 20px 0 50px 0;
+    }
+
+    .linea{
+        margin: 20px 0;
+    }
+
+    .contenedor-video {
+        width: 90%;
+        margin: 40px auto 0 auto;
+    }
+
+
+
+
+}
+
+/*TABLET*/
+@media (min-width: 701px) and (max-width: 1024px){
+
+    .logo {
+        width: 50%!important;
+        margin: 30px auto;
+    }
+
+    .texto-principal p {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    .titulo-principal {
+        width: 90%;
+    }
+
+    .col-izq, .col-der {
+        width: 50%;
+    }
+
+    .linea{
+        margin: 20px 0;
+    }
+
+    .contenedor-video {
+        width: 100%;
+        margin: 80px auto 0 auto;
+    }
+}

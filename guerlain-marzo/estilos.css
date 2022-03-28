@@ -139,7 +139,7 @@ img{
 
 .contenedor-video{
     width: 85%;
-    margin: 20px auto 0 auto;
+    margin: 100px auto;
 }
 
 #landing video{
@@ -275,6 +275,7 @@ button {
 
     .contenedor-video{
         width: 100%;
+        margin: 50px auto;
     }
 
 

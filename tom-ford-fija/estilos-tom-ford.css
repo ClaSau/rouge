@@ -140,6 +140,9 @@ i{
 
 .col-der{
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .col-der h3, .col-izq h3{
@@ -289,6 +292,8 @@ button {
 
   .boton-vermas{
     display: inline-block;
+    margin-top: 80px;
+    text-align: center;
     color: white;
     background-color: black;
     text-decoration: none;
@@ -309,6 +314,8 @@ button {
     width: 270px;
     box-shadow: 0 0 20px #00000024;
 }
+
+
 
 
 
@@ -400,6 +407,10 @@ button {
 
     .card-img p {
         font-size: 0.9em;
+    }
+
+    .boton-vermas{
+        margin-top: 40px;
     }
 
 

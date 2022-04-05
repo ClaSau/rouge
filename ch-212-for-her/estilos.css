@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#landing {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #landing img{
+      width: 100% ;
+  }
+  
+
+#header{
+    width: 100%;
+}
+
+#header img{
+    width: 100%;
+}
+
+#header-desktop{
+    display: initial;
+}
+
+#header-mobile{
+    display: none;
+}
+
+#landing video{
+    width: 100%;
+}
+
+#landing h2{
+    font-size: 40px;
+    margin: 10px 0;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#landing h3{
+    font-size: 25px;
+}
+
+#landing p{
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.titular{
+    text-align: center;
+    margin: 30px auto 80px auto;
+    width: 80%;
+}
+
+
+.dos-columnas{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5%;
+    justify-content: space-between;
+}
+
+.col-der{
+    width: 58%;
+}
+
+
+
+.col-izq{
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+}
+
+.col-izq  p{
+    margin: 0 100px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.dos-columnas-2{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin: 80px 5%;
+}
+
+.col-izq-2{
+    width: 48%;
+}
+
+.col-der-2{
+    width: 38%;
+    padding: 0 5%;
+}
+
+.col-der-2 h2{
+    margin-bottom: 40px!important;
+}
+
+.boton-landing{
+    text-align: center;
+    display: block;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 0;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0px;
+    line-height: 20px;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+    border: 1px black solid;
+
+}
+
+.boton-landing:hover{
+    background-color: black;
+    color: white;
+}
+
+.tres-columnas{
+    display: flex;
+    flex-direction: row;
+    margin: 0 5%;
+    justify-content: space-around;
+}
+
+.card{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img{
+    
+    margin-bottom: 20px;
+}
+
+.card p{
+    margin: 0!important;
+}
+
+.contenedor-video{
+    width: 90%;
+    margin: 100px auto 40px auto;
+}
+
+.margin{
+    margin: 80px auto 0 auto;
+
+}
+
+
+
+
+@media (max-width: 701px){
+    #landing p{
+        font-size: 18px;
+    }
+
+    #landing h2{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #header-desktop{
+        display: none;
+    }
+
+    #header-mobile{
+        display: initial;
+    }
+
+    .col-izq , .col-der , .col-izq-2 , .col-der-2 , .card{
+        width: 100%!important;
+    }
+
+    .tres-columnas{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 30px;
+    }
+
+    .contenedor-video {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .titular {
+        text-align: center;
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .dos-columnas{
+        flex-direction: column-reverse;
+    }
+
+    .dos-columnas-2{
+        margin: 40px 5%;
+    }
+
+    .col-izq{
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .col-der-2{
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .col-izq p, .col-der-2 p{
+        text-align: center;
+    }
+
+    .boton-landing{
+        margin: 50px auto 0 auto;
+        background-color: black;
+        color: white;
+    }
+
+    #boton{
+        margin: 40px auto 80px auto;
+    }
+
+    .card img{
+    
+        margin-bottom: 20px;
+    }
+    
+    .card p{
+        margin: 0!important;
+    }
+
+
+
+
+
+}

@@ -13,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px
   }
 
   #landing img{
@@ -160,7 +161,7 @@ body{
 
 .contenedor-video{
     width: 90%;
-    margin: 100px auto 40px auto;
+    margin: 100px auto 0px auto;
 }
 
 .margin{
@@ -172,6 +173,10 @@ body{
 
 
 @media (max-width: 701px){
+    #landing{
+    margin-top:0;
+    }
+    
     #landing p{
         font-size: 18px;
     }

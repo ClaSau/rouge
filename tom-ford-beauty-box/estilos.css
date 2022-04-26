@@ -226,6 +226,7 @@ align-items: flex-end;
     .info-bloque{
         flex-direction: column;
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .info-bloque img {

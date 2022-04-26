@@ -66,7 +66,7 @@ h4{
 }
 
 .dos-columnas p{
-    font-size: 18px!important;
+    font-size: 16px!important;
 }
 
 .col-der{
@@ -103,6 +103,7 @@ align-items: flex-end;
 .info{
     display: flex;
     flex-direction: row;
+    
 
 }
 
@@ -110,14 +111,16 @@ align-items: flex-end;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 30%;
 }
 
 .info-bloque img{
-    height: 70px;
+    max-height: 50%;
 }
 
 .info-bloque p{
     margin: 0 20px!important;
+        font-size: 16px!important;
 }
 
 
